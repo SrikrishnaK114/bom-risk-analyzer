@@ -1,0 +1,501 @@
+part_number,category,package,voltage,current,tolerance,criticality,second_source,lifecycle,lead_time_weeks,availability,overall_risk,best_alternative,alternative_type
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,False,Active,17,10760,41,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,True,Active,4,40417,23,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,True,Active,26,40503,23,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,False,Active,17,730,55,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,True,Active,12,14401,13,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,True,Active,10,33931,12,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,NRND,13,26239,66,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,False,EOL,18,34078,89,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,28,8676,53,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,False,NRND,12,6502,52,GD32F103CBT6,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,Active,22,5815,62,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,Active,14,44133,41,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,Active,26,29734,53,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,False,Active,16,24205,24,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,True,Active,7,10564,12,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,False,Active,16,3699,48,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,Active,24,2865,69,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,True,Active,14,42391,14,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,Active,16,1088,34,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,True,Active,4,15169,6,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,True,Active,28,20744,22,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,Active,20,46124,36,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,Active,25,8725,43,ESP32-S3-WROOM-1,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,NRND,6,35011,57,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,EOL,12,7598,89,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,NRND,10,28644,44,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,Active,22,3050,71,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,Active,14,2555,50,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,NRND,21,37619,66,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,Active,25,21242,33,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,Active,21,38001,41,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,NRND,13,17576,63,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,False,Active,17,7334,47,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,True,Active,27,47957,23,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,19,9804,35,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,False,NRND,19,41476,53,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,Active,23,5202,32,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,EOL,16,9999,100,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,False,Active,12,2456,44,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,11,19195,15,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,EOL,14,7264,100,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,False,Active,27,39516,47,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,NRND,15,44275,46,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,Active,15,27693,23,ESP32-S3-WROOM-1,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,Active,18,3330,52,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,21,31791,38,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,False,Active,14,17474,24,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,False,Active,17,3327,45,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,Active,17,38416,25,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,False,Active,10,31009,28,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,False,Active,28,36591,45,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,False,Active,5,13069,23,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,False,Active,15,30049,27,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,False,Active,5,44873,18,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,True,Active,26,8140,43,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,15,49701,23,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,Active,26,39874,53,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,False,NRND,17,26230,57,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,True,Active,26,33390,36,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,False,Active,8,35986,17,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,False,Active,15,4482,63,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,False,Active,19,11523,46,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,NRND,18,2447,70,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,True,Active,22,3917,42,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,10,38057,21,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,NRND,6,35275,42,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,True,Active,25,37112,30,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,Active,10,22004,28,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,True,EOL,23,30965,95,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,EOL,8,44504,70,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,13,42477,25,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,23,2943,59,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,True,Active,11,39801,18,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,Active,6,3059,40,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,Active,12,42186,30,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,True,Active,22,38388,35,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,Active,12,19330,31,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,Active,22,43095,45,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,19,43144,30,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,True,Active,25,37256,23,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,Active,4,32275,23,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,22,11696,48,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,Active,7,38084,16,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,Active,8,19427,29,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,Active,4,21542,11,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,Active,21,20909,25,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,21,27168,37,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,NRND,19,1419,72,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,EOL,17,25851,80,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,False,Active,13,30354,37,ESP32-S3-WROOM-1,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,Active,9,20752,23,LM1117-5.0,Drop-in
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,EOL,26,25313,93,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,EOL,26,5653,100,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,True,Active,11,9051,16,ESP32-S3-WROOM-1,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,9,27921,16,LM1117-5.0,Drop-in
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,Active,16,24363,24,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,NRND,9,14510,64,GD32F103CBT6,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,NRND,15,42515,52,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,27,4327,52,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,Active,28,33073,34,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,25,17305,40,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,True,Active,16,14547,27,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,True,Active,28,31995,41,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,True,Active,6,8008,12,LM1117-5.0,Drop-in
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,16,27292,33,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,True,Active,6,34902,20,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,EOL,14,2926,97,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,5,12412,28,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,True,Active,27,43966,24,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,True,Active,25,3303,58,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,NRND,11,40834,46,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,EOL,11,8984,96,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,Active,18,24820,31,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,Active,7,30831,15,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,NRND,10,40552,43,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,Active,26,20770,35,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,NRND,25,46497,83,GD32F103CBT6,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,Active,12,43669,30,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,Active,20,7307,40,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,7,14230,32,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,False,EOL,16,1657,97,ESP32-S3-WROOM-1,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,4,4878,35,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,True,NRND,4,17792,48,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,NRND,18,697,92,GD32F103CBT6,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,False,Active,13,22270,36,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,EOL,18,29507,72,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,Active,17,34639,20,GD32F103CBT6,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,False,Active,26,12106,50,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,Active,5,23096,4,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,True,Active,7,38654,20,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,False,NRND,17,35419,56,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,Active,7,12368,26,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,False,NRND,15,8516,77,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,Active,28,26825,43,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,False,EOL,26,39933,100,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,Active,14,37592,13,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,True,Active,11,6420,13,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,Active,17,44563,43,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,True,Active,28,24965,42,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,11,38523,10,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,True,Active,4,39249,11,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,Active,24,44316,50,GD32F103CBT6,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,True,Active,10,15228,7,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,13,4885,47,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,False,Active,11,49786,17,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,NRND,7,24775,50,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,Active,28,27511,42,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,False,EOL,8,5048,77,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,Active,14,21168,34,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,False,NRND,6,30461,53,LM1117-5.0,Drop-in
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,False,Active,5,34391,15,ESP32-S3-WROOM-1,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,18,40334,25,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,NRND,26,32688,54,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,True,Active,5,48880,18,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,NRND,9,3379,55,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,Active,15,24354,40,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,Active,27,42200,41,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,28,47125,36,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,NRND,8,10994,58,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,22,11333,46,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,EOL,26,44841,80,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,NRND,25,25889,63,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,NRND,8,23133,42,GD32F103CBT6,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,20,12937,33,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,22,35026,35,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,Active,13,14706,43,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,NRND,14,7481,68,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,True,NRND,7,32598,34,GD32F103CBT6,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,22,4853,55,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,Active,22,42161,37,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,Active,27,7351,62,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,NRND,5,40546,38,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,Active,12,39280,32,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,NRND,28,15158,64,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,NRND,16,31551,60,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,5,48573,12,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,True,Active,24,1232,43,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,Active,23,37266,36,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,True,NRND,10,15389,50,GD32F103CBT6,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,True,Active,26,9815,36,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,22,46686,38,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,24,33332,32,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,NRND,28,30295,81,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,Active,21,44534,45,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,24,44926,31,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,12,12679,28,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,True,NRND,5,47148,42,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,NRND,11,33967,51,ESP32-S3-WROOM-1,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,True,NRND,12,8535,45,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,27,48608,36,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,NRND,21,27221,72,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,True,NRND,8,7736,62,GD32F103CBT6,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,True,EOL,10,43521,61,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,Active,25,48016,40,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,False,Active,19,3027,42,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,NRND,22,11983,75,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,True,Active,14,15479,31,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,NRND,15,27569,61,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,Active,15,37038,41,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,True,NRND,9,3578,56,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,True,NRND,20,2892,62,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,False,Active,20,10842,53,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,Active,28,23000,44,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,Active,12,7825,42,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,EOL,4,36105,68,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,Active,14,14221,49,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,Active,18,2204,51,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,True,Active,4,42219,8,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,Active,11,39006,16,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,NRND,8,2882,77,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,NRND,28,15712,53,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,True,EOL,21,20246,82,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,Active,18,47656,35,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,NRND,14,18552,71,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,13,45676,29,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,7,49777,18,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,NRND,27,31633,61,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,NRND,28,22125,61,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,Active,5,27979,29,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,True,Active,22,30446,26,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,NRND,20,45668,64,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,False,Active,20,21533,28,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,Active,5,48850,16,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,Active,16,44734,35,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,5,16789,17,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,True,Active,18,27689,29,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,True,Active,8,9306,30,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,True,Active,21,45761,26,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,True,Active,28,35905,27,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,Active,25,18916,40,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,Active,16,16944,33,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,True,NRND,6,37912,32,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,25,37069,42,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,NRND,7,8232,63,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,False,NRND,20,10025,73,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,True,Active,25,22963,25,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,Active,22,14940,61,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,False,Active,22,14783,55,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,True,EOL,10,16368,59,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,Active,15,13843,53,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,NRND,17,41551,47,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,18,36947,22,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,True,Active,12,17242,4,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,NRND,13,33556,58,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,True,Active,8,25320,6,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,Active,23,22748,31,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,16,34449,28,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,EOL,28,36803,97,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,19,43839,22,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,EOL,25,16504,100,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,False,Active,17,24169,23,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,12,49863,20,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,Active,4,8058,41,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,True,Active,7,11553,13,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,Active,12,34655,4,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,False,Active,8,16625,27,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,False,Active,21,38582,48,ESP32-S3-WROOM-1,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,10,21720,15,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,NRND,16,25874,73,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,Active,27,17248,47,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,11,20760,14,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,NRND,4,29785,51,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,6,15598,18,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,Active,21,38110,32,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,True,Active,12,36069,20,GD32F103CBT6,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,NRND,28,42485,78,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,True,Active,24,2256,58,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,EOL,11,14070,86,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,Active,7,3052,35,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,24,37447,42,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,False,Active,20,47593,35,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,EOL,5,47094,74,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,28,35886,34,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,20,3964,45,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,Active,7,34839,27,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,27,40599,33,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,Active,21,5734,51,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,Active,15,21779,32,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,Active,19,32624,36,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,True,Active,18,4684,50,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,27,35023,39,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,Active,10,42954,28,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,13,44799,24,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,True,Active,4,21379,4,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,True,NRND,27,42040,61,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,Active,13,48298,26,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,False,Active,28,31597,35,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,Active,21,31903,50,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,28,7754,40,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,False,Active,25,2426,55,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,Active,25,5364,42,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,True,Active,18,35321,29,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,True,Active,7,39282,5,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,26,35296,40,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,False,Active,20,24365,36,ESP32-S3-WROOM-1,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,NRND,11,29912,49,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,Active,7,45977,31,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,True,NRND,21,29307,57,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,Active,15,21143,21,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,Active,11,49032,19,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,22,32598,42,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,False,Active,13,49407,23,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,13,44252,28,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,EOL,23,31193,80,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,False,Active,8,43944,24,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,12,16757,12,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,NRND,6,49802,58,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,4,2799,33,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,Active,27,7821,57,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,Active,26,2477,57,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,False,Active,21,28615,32,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,False,Active,12,37545,16,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,False,Active,4,12364,43,ESP32-S3-WROOM-1,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,5,6416,23,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,Active,14,47447,33,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,Active,15,31846,42,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,False,Active,26,14025,51,LM1117-5.0,Drop-in
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,False,Active,13,9837,42,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,True,Active,6,6645,15,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,EOL,16,7865,89,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,14,32527,29,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,NRND,24,14196,74,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,True,Active,23,15253,23,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,NRND,22,30456,66,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,Active,10,25435,31,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,21,32065,36,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,NRND,22,46603,73,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,NRND,16,29962,68,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,EOL,17,31361,93,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,True,Active,12,23558,6,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,False,Active,11,43914,17,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,NRND,17,21645,55,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,Active,4,19526,31,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,False,Active,6,47724,13,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,False,Active,19,19977,27,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,True,EOL,19,20031,82,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,False,EOL,7,34330,78,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,True,Active,13,7776,31,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,Active,27,34739,30,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,False,Active,19,27042,30,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,Active,27,5770,35,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,Active,26,9679,59,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,Active,28,23350,39,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,Active,14,24651,34,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,NRND,14,14523,71,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,5,48498,21,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,4,37691,22,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,EOL,18,14385,92,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,False,Active,12,46087,17,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,Active,15,13858,31,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,EOL,27,36781,100,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,Active,21,29716,50,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,NRND,28,10841,76,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,Active,16,35485,26,ESP32-S3-WROOM-1,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,False,Active,16,44558,30,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,24,45898,34,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,EOL,5,26334,70,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,Active,22,42939,52,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,Active,7,12216,23,GD32F103CBT6,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,False,EOL,12,48078,75,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,Active,23,21797,40,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,Active,16,3764,61,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,Active,26,22068,41,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,True,Active,9,16661,8,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,17,28409,27,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,False,Active,7,5344,40,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,Active,8,935,40,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,False,NRND,17,49534,64,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,True,Active,16,6959,22,ESP32-S3-WROOM-1,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,Active,23,42230,48,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,22,14019,42,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,NRND,23,39924,70,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,Active,25,1399,43,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,NRND,24,42157,61,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,True,NRND,27,27202,53,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,EOL,13,22435,91,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,NRND,9,12694,64,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,5,7536,33,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,6,39763,17,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,True,Active,14,30590,20,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,NRND,17,28867,53,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,NRND,15,4633,77,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,Active,17,29438,18,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,21,8460,43,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,False,EOL,12,19925,70,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,Active,6,20709,20,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,False,Active,9,44606,17,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,NRND,18,12930,64,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,True,Active,21,47075,26,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,18,28821,28,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,Active,26,19754,40,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,10,16592,12,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,False,NRND,9,43013,47,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,NRND,13,11793,62,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,True,Active,25,27351,34,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,NRND,25,18045,79,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,True,Active,7,31977,5,LM1117-5.0,Drop-in
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,True,NRND,28,15630,53,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,True,Active,21,7371,47,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,24,34637,43,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,Active,5,49685,24,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,True,Active,10,39872,3,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,NRND,15,2987,88,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,Active,9,41666,14,ICM42688P,Major Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,Active,16,28754,23,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,EOL,20,30219,72,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,Active,8,25706,3,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,Active,11,39495,23,LM1117-5.0,Drop-in
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,Active,15,20123,21,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,EOL,26,26062,96,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,False,Active,22,20814,36,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,EOL,7,31764,71,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,NRND,11,648,57,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,24,29426,43,ESP32-S3-WROOM-1,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,NRND,18,4758,91,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,False,NRND,14,33124,53,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,NRND,6,16920,52,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,23,25448,41,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,NRND,5,15570,63,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,NRND,11,39587,54,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,EOL,25,16885,99,IRLZ44N,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,Active,28,26373,31,GD32F103CBT6,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,19,13639,34,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,6,11583,23,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,20,5228,41,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,False,Active,7,5000,43,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,EOL,11,16394,74,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,NRND,17,23777,63,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,High,False,Active,6,41912,27,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,NRND,24,43954,71,ESP32-S3-WROOM-1,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,Active,4,43287,22,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,False,NRND,27,1117,84,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,True,Active,18,8978,22,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,High,True,Active,18,28446,30,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,False,Active,15,47875,22,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,False,Active,28,8600,47,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,6,5798,33,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,False,NRND,15,4272,72,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,False,NRND,24,44397,74,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,Active,22,43288,36,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,18,22965,20,LM1117-5.0,Drop-in
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,False,Active,24,30850,41,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,Active,16,7950,44,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,Active,13,39770,33,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,Active,15,24199,22,ESP32-S3-WROOM-1,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,False,Active,6,40608,16,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,False,NRND,23,19983,66,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,True,NRND,10,45426,33,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,6,1613,37,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,False,NRND,24,16697,70,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,NRND,28,20054,77,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,Active,20,28453,28,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,True,Active,20,48880,30,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,Active,21,42793,35,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,False,NRND,12,17847,51,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,EOL,25,29330,91,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,True,NRND,20,9491,68,ICM42688P,Major Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,11,41163,16,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,6,10488,23,LM1117-5.0,Drop-in
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,Active,6,48167,33,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,17,22728,30,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,True,Active,4,12880,23,ESP32-S3-WROOM-1,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,EOL,19,25753,70,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,Active,6,44812,11,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Medium,True,EOL,21,29420,88,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,NRND,14,9894,72,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,Active,22,19015,50,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,Active,23,49804,53,LM1117-5.0,Drop-in
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,Active,13,46105,39,LM1117-5.0,Drop-in
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,27,27323,38,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,False,Active,19,4356,51,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,Active,28,30412,44,GD32F103CBT6,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,False,EOL,5,49365,68,GD32F103CBT6,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,Low,False,NRND,26,27732,63,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Low,True,Active,18,17377,16,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,NRND,4,8865,55,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Medium,True,Active,11,8263,26,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,EOL,11,11245,84,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,True,NRND,7,33498,49,ICM42688P,Major Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,EOL,5,19858,85,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,Active,8,48920,26,GD32F103CBT6,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,False,Active,9,22870,33,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,NRND,6,41544,48,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,High,True,Active,24,30302,40,ICM42688P,Major Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,False,Active,24,14849,54,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,True,EOL,14,26250,81,IRLZ44N,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,True,Active,16,33091,15,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,NRND,8,17026,50,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Low,False,EOL,22,36218,89,ESP32-S3-WROOM-1,Minor Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,Active,26,39169,42,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,False,Active,25,14604,60,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Low,True,NRND,14,615,67,IRLZ44N,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,Medium,True,Active,6,37072,12,IRLZ44N,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,Active,5,39381,33,LM1117-5.0,Drop-in
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,False,EOL,27,16887,95,GD32F103CBT6,Minor Redesign
+IRF540N,MOSFET,TO220,100.0,33.0,±10%,High,True,Active,23,42280,37,IRLZ44N,Minor Redesign
+MPU6050,Sensor,QFN24,3.3,0.004,±5%,Low,True,Active,26,25122,22,ICM42688P,Major Redesign
+STM32F103C8,MCU,LQFP48,3.3,0.05,±5%,Medium,True,Active,17,34092,24,GD32F103CBT6,Minor Redesign
+ESP32-WROOM,WiFi Module,Module,3.3,0.5,±5%,Medium,False,NRND,20,24691,66,ESP32-S3-WROOM-1,Minor Redesign
+LM7805,Voltage Regulator,TO220,5.0,1.0,±5%,High,False,Active,28,10796,59,LM1117-5.0,Drop-in

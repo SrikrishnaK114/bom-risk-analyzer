@@ -1,0 +1,38 @@
+{
+  "components": [
+    {
+      "part_number": "STM32F103C8",
+      "category": "Microcontroller",
+      "package": "LQFP48",
+      "qty": 2,
+      "criticality": "High",
+      "second_source": false,
+      "manufacturer": "STMicroelectronics",
+      "lifecycle": "Active",
+      "lead_time": 12,
+      "availability": 14500,
+      "electrical_specs": {
+        "voltage": "3.3V",
+        "current": "50mA",
+        "tolerance": "±5%"
+      }
+    },
+    {
+      "part_number": "LM7805",
+      "category": "Voltage Regulator",
+      "package": "TO220",
+      "qty": 5,
+      "criticality": "Medium",
+      "second_source": true,
+      "manufacturer": "Texas Instruments",
+      "lifecycle": "NRND",
+      "lead_time": 20,
+      "availability": 2000,
+      "electrical_specs": {
+        "voltage": "5V",
+        "current": "1A",
+        "tolerance": "±5%"
+      }
+    }
+  ]
+}

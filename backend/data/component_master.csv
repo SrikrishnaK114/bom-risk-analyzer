@@ -1,1 +1,26 @@
 part_number,manufacturer,category,package,voltage,current,tolerance,lifecycle,lead_time,availability,criticality,second_source,substitute_group
+STM32F103C8,STMicroelectronics,MCU,LQFP48,3.3,0.05,±5%,Active,12,14500,High,No,MCU_STM32F1
+STM32F103CBT6,STMicroelectronics,MCU,LQFP48,3.3,0.05,±5%,Active,10,12000,High,Yes,MCU_STM32F1
+GD32F103CBT6,GigaDevice,MCU,LQFP48,3.3,0.05,±5%,Active,8,18000,High,Yes,MCU_STM32F1
+CH32F103C8,WCH,MCU,LQFP48,3.3,0.05,±5%,Active,9,16000,High,Yes,MCU_STM32F1
+STM32F401CCU6,STMicroelectronics,MCU,LQFP48,3.3,0.06,±5%,Active,14,9500,High,No,MCU_STM32F4
+ESP32-WROOM,Espressif,WiFi MCU,Module,3.3,0.5,±5%,Active,18,11000,High,No,WIFI_MCU
+ESP32-S3-WROOM-1,Espressif,WiFi MCU,Module,3.3,0.55,±5%,Active,15,13000,High,Yes,WIFI_MCU
+ATmega328P,Microchip,MCU,TQFP32,5,0.03,±5%,Active,11,25000,Medium,Yes,MCU_AVR
+LM7805,Texas Instruments,Voltage Regulator,TO220,5,1,±5%,Active,8,40000,Medium,Yes,REG_5V
+LM1117-5.0,Texas Instruments,Voltage Regulator,SOT223,5,0.8,±5%,Active,10,25000,Medium,Yes,REG_5V
+AMS1117-5.0,Advanced Monolithic Systems,Voltage Regulator,SOT223,5,1,±5%,Active,9,30000,Medium,Yes,REG_5V
+LM1117-3.3,Texas Instruments,Voltage Regulator,SOT223,3.3,0.8,±5%,Active,10,28000,Medium,Yes,REG_3V3
+AMS1117-3.3,Advanced Monolithic Systems,Voltage Regulator,SOT223,3.3,1,±5%,Active,9,32000,Medium,Yes,REG_3V3
+LM358,Texas Instruments,Op Amp,SOIC8,32,0.04,±5%,Active,6,50000,Low,Yes,OPAMP_DUAL
+LM324,Texas Instruments,Op Amp,SOIC14,32,0.06,±5%,Active,7,42000,Low,Yes,OPAMP_QUAD
+MCP6002,Microchip,Op Amp,SOIC8,6,0.001,±5%,Active,5,38000,Low,Yes,OPAMP_DUAL
+OPA2134,Texas Instruments,Op Amp,SOIC8,36,0.004,±5%,Active,8,12000,Medium,Yes,OPAMP_DUAL
+IRLZ44N,Infineon,MOSFET,TO220,55,47,±5%,Active,11,21000,Medium,Yes,MOSFET_POWER
+IRFZ44N,Infineon,MOSFET,TO220,55,49,±5%,Active,12,19000,Medium,Yes,MOSFET_POWER
+AO3400,AOS,MOSFET,SOT23,30,5.8,±5%,Active,6,45000,Low,Yes,MOSFET_SMALL
+2N7000,onsemi,MOSFET,TO92,60,0.2,±5%,Active,7,35000,Low,Yes,MOSFET_SMALL
+MPU6050,TDK InvenSense,Sensor,QFN24,3.3,0.004,±5%,Active,13,9000,High,No,SENSOR_IMU
+ICM42688,TDK InvenSense,Sensor,QFN24,3.3,0.003,±5%,Active,14,8000,High,Yes,SENSOR_IMU
+BME280,Bosch,Sensor,LGA8,3.3,0.0008,±5%,Active,9,16000,Medium,Yes,SENSOR_ENV
+BMP280,Bosch,Sensor,LGA8,3.3,0.0007,±5%,Active,8,17000,Medium,Yes,SENSOR_ENV
