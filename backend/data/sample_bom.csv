@@ -1,0 +1,4 @@
+part_number ,manufacturer,quantity
+STM32F103C8 ,STMicroelectronics,2
+STM32F103CBT6 ,STMicroelectronics,1 
+GD32F103CBT6 ,GigaDevice,3

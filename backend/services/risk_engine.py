@@ -2,70 +2,179 @@ import joblib
 import pandas as pd
 from pathlib import Path
 
+
+# ============================================================
+# LOAD TRAINED ML MODEL
+# ============================================================
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 MODEL_PATH = BASE_DIR / "training" / "risk_model.pkl"
 
+if not MODEL_PATH.exists():
+    raise FileNotFoundError(
+        f"Risk model not found:\n{MODEL_PATH}"
+    )
+
 model = joblib.load(MODEL_PATH)
 
+
+# ============================================================
+# PARSERS
+# ============================================================
+
 def parse_voltage(value):
-    
     try:
-        return float(str(value).replace("V", "").strip())
-    except:
+        return float(
+            str(value)
+            .replace("V", "")
+            .strip()
+        )
+    except (ValueError, TypeError):
         return 0.0
 
 
 def parse_current(value):
-    
     try:
         value = str(value).strip().upper()
 
         if value.endswith("MA"):
-            return float(value.replace("MA", "")) / 1000
+            return float(
+                value.replace("MA", "")
+            ) / 1000
 
-        elif value.endswith("A"):
-            return float(value.replace("A", ""))
+        if value.endswith("A"):
+            return float(
+                value.replace("A", "")
+            )
 
         return float(value)
 
-    except:
+    except (ValueError, TypeError):
         return 0.0
 
 
-def calculate_component_risk(component):
-   
-    specs = component.get("electrical_specs", {})
+# ============================================================
+# RISK LEVEL
+# ============================================================
 
-    voltage = parse_voltage(specs.get("voltage", "0V"))
-    current = parse_current(specs.get("current", "0mA"))
+def get_risk_level(score):
+
+    if score >= 70:
+        return "High"
+
+    elif score >= 40:
+        return "Medium"
+
+    return "Low"
+
+
+# ============================================================
+# COMPONENT RISK
+# ============================================================
+
+def calculate_component_risk(component):
+
+    specs = component.get(
+        "electrical_specs",
+        {}
+    )
+
+    voltage = parse_voltage(
+        specs.get("voltage", "0V")
+    )
+
+    current = parse_current(
+        specs.get("current", "0mA")
+    )
+
+    # --------------------------------------------------------
+    # FEATURES SENT TO ML MODEL
+    # --------------------------------------------------------
 
     features = pd.DataFrame([{
-        "category": component.get("category", ""),
-        "package": component.get("package", ""),
+        "category": component.get(
+            "category", ""
+        ),
+
+        "package": component.get(
+            "package", ""
+        ),
+
         "voltage": voltage,
+
         "current": current,
-        "criticality": component.get("criticality", "Low"),
-        "second_source": component.get("second_source", True),
-        "lifecycle": component.get("lifecycle", "Active"),
-        "lead_time_weeks": component.get("lead_time", 0),
-        "availability": component.get("availability", 0)
+
+        "criticality": component.get(
+            "criticality", "Low"
+        ),
+
+        "second_source": component.get(
+            "second_source", True
+        ),
+
+        "lifecycle": component.get(
+            "lifecycle", "Active"
+        ),
+
+        "lead_time_weeks": component.get(
+            "lead_time", 0
+        ),
+
+        "availability": component.get(
+            "availability", 0
+        )
     }])
 
+
+    # ========================================================
+    # ML PREDICTION
+    # ========================================================
+
     try:
-        risk_score = round(float(model.predict(features)[0]))
+
+        predicted_score = model.predict(
+            features
+        )[0]
+
+        risk_score = round(
+            float(predicted_score)
+        )
 
     except Exception as e:
-        print("Prediction Error:", e)
+
+        print(
+            "ML Prediction Error:",
+            e
+        )
+
+        # Safe fallback
         risk_score = 50
 
-    if risk_score >= 70:
-        risk_level = "High"
 
-    elif risk_score >= 40:
-        risk_level = "Medium"
+    # Keep score inside 0-100
+    risk_score = max(
+        0,
+        min(100, risk_score)
+    )
 
-    else:
-        risk_level = "Low"
+
+    # ========================================================
+    # RISK LEVEL
+    # ========================================================
+
+    risk_level = get_risk_level(
+        risk_score
+    )
+
+
+    # ========================================================
+    # EXPLAINABLE RISK BREAKDOWN
+    #
+    # This is NOT replacing the ML model.
+    #
+    # It explains which factors contribute to the
+    # component's risk.
+    # ========================================================
 
     breakdown = {
         "obsolescence": 0,
@@ -74,37 +183,130 @@ def calculate_component_risk(component):
         "criticality": 0
     }
 
-    lifecycle = component.get("lifecycle", "").upper()
+
+    # --------------------------------------------------------
+    # Lifecycle
+    # --------------------------------------------------------
+
+    lifecycle = str(
+        component.get(
+            "lifecycle",
+            ""
+        )
+    ).upper()
 
     if lifecycle == "EOL":
-        breakdown["obsolescence"] = 50
+
+        breakdown["obsolescence"] = 60
 
     elif lifecycle == "NRND":
-        breakdown["obsolescence"] = 30
 
-    lead_time = component.get("lead_time", 0)
-    availability = component.get("availability", 0)
+        breakdown["obsolescence"] = 35
 
-    if lead_time > 16:
-        breakdown["supply"] += 15
+    elif lifecycle == "ACTIVE":
+
+        breakdown["obsolescence"] = 5
+
+
+    # --------------------------------------------------------
+    # Supply
+    # --------------------------------------------------------
+
+    lead_time = float(
+        component.get(
+            "lead_time",
+            0
+        )
+    )
+
+    availability = float(
+        component.get(
+            "availability",
+            0
+        )
+    )
+
+
+    if lead_time > 20:
+
+        breakdown["supply"] += 20
+
+    elif lead_time > 12:
+
+        breakdown["supply"] += 10
+
 
     if availability < 5000:
-        breakdown["supply"] += 15
 
-    if component.get("second_source") is False:
+        breakdown["supply"] += 20
+
+    elif availability < 15000:
+
+        breakdown["supply"] += 10
+
+
+    # --------------------------------------------------------
+    # Single Source
+    # --------------------------------------------------------
+
+    if component.get(
+        "second_source"
+    ) is False:
+
         breakdown["single_source"] = 10
 
-    criticality = component.get("criticality", "").lower()
+
+    # --------------------------------------------------------
+    # Criticality
+    # --------------------------------------------------------
+
+    criticality = str(
+        component.get(
+            "criticality",
+            ""
+        )
+    ).strip().lower()
+
 
     if criticality == "high":
+
         breakdown["criticality"] = 15
 
     elif criticality == "medium":
+
         breakdown["criticality"] = 8
 
+
+    # ========================================================
+    # DEBUG
+    # ========================================================
+
+    print("\nDEBUG COMPONENT:")
+    print(component)
+
+    print("\nDEBUG ML SCORE:")
+    print(risk_score)
+
+    print("\nDEBUG RISK LEVEL:")
+    print(risk_level)
+
+    print("\nDEBUG BREAKDOWN:")
+    print(breakdown)
+
+
+    # ========================================================
+    # RESULT
+    # ========================================================
+
     return {
-        "part_number": component.get("part_number", "Unknown"),
+        "part_number": component.get(
+            "part_number",
+            "Unknown"
+        ),
+
         "risk_score": risk_score,
+
         "risk_level": risk_level,
+
         "risk_breakdown": breakdown
     }

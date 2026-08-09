@@ -2,7 +2,13 @@ import pandas as pd
 import random
 from pathlib import Path
 
+
+# ============================================================
+# SAMPLE COMPONENTS
+# ============================================================
+
 components = [
+
     {
         "part_number": "STM32F103C8",
         "category": "MCU",
@@ -10,8 +16,8 @@ components = [
         "voltage": 3.3,
         "current": 0.05,
         "tolerance": "±5%",
-        "alternative": "GD32F103CBT6",
-        "alt_type": "Minor Redesign"
+        "alternative": "STM32F103CBT6",
+        "alt_type": "Exact Drop-in"
     },
 
     {
@@ -22,7 +28,7 @@ components = [
         "current": 1,
         "tolerance": "±5%",
         "alternative": "LM1117-5.0",
-        "alt_type": "Drop-in"
+        "alt_type": "Minor Redesign"
     },
 
     {
@@ -58,12 +64,33 @@ components = [
         "alt_type": "Major Redesign"
     }
 ]
-lifecycles = ["Active", "NRND", "EOL"]
-criticalities = ["Low", "Medium", "High"]
+
+
+# ============================================================
+# POSSIBLE VALUES
+# ============================================================
+
+lifecycles = [
+    "Active",
+    "NRND",
+    "EOL"
+]
+
+criticalities = [
+    "Low",
+    "Medium",
+    "High"
+]
+
+
+# ============================================================
+# GENERATE DATA
+# ============================================================
 
 rows = []
 
-for i in range(500):
+
+for _ in range(500):
 
     component = random.choice(components)
 
@@ -72,72 +99,200 @@ for i in range(500):
         weights=[70, 20, 10]
     )[0]
 
-    criticality = random.choice(criticalities)
+    criticality = random.choice(
+        criticalities
+    )
 
-    second_source = random.choice([True, False])
+    second_source = random.choice(
+        [True, False]
+    )
 
-    lead_time = random.randint(4, 28)
+    lead_time = random.randint(
+        4,
+        28
+    )
 
-    availability = random.randint(500, 50000)
+    availability = random.randint(
+        500,
+        50000
+    )
+
+
+    # ========================================================
+    # RISK SCORE
+    # ========================================================
 
     risk = 0
 
-    # Lifecycle contribution
+
+    # --------------------------------------------------------
+    # Obsolescence
+    # --------------------------------------------------------
+
     if lifecycle == "Active":
+
         risk += 5
+
     elif lifecycle == "NRND":
+
         risk += 35
-    else:  # EOL
+
+    elif lifecycle == "EOL":
+
         risk += 60
 
-    # Lead time contribution
+
+    # --------------------------------------------------------
+    # Supply
+    # --------------------------------------------------------
+
     if lead_time > 20:
+
         risk += 20
+
     elif lead_time > 12:
+
         risk += 10
 
-    # Availability contribution
+
     if availability < 5000:
+
         risk += 20
+
     elif availability < 15000:
+
         risk += 10
 
-    # Criticality contribution
+
+    # --------------------------------------------------------
+    # Criticality
+    #
+    # High means the component is very important
+    # to the system.
+    # --------------------------------------------------------
+
     if criticality == "High":
+
         risk += 15
+
     elif criticality == "Medium":
+
         risk += 8
 
-    # Single source contribution
+
+    # --------------------------------------------------------
+    # Single source
+    # --------------------------------------------------------
+
     if not second_source:
+
         risk += 10
 
-    # Small random variation
-    risk += random.randint(-3, 3)
 
-    # Keep between 0 and 100
-    risk = max(0, min(100, risk))
+    # --------------------------------------------------------
+    # Small variation
+    # --------------------------------------------------------
+
+    risk += random.randint(
+        -3,
+        3
+    )
+
+
+    # Keep score within 0–100
+
+    risk = max(
+        0,
+        min(
+            100,
+            risk
+        )
+    )
+
+
+    # ========================================================
+    # STORE ROW
+    # ========================================================
+
     rows.append({
-        "part_number": component["part_number"],
-        "category": component["category"],
-        "package": component["package"],
-        "voltage": component["voltage"],
-        "current": component["current"],
-        "tolerance": component["tolerance"],
-        "criticality": criticality,
-        "second_source": second_source,
-        "lifecycle": lifecycle,
-        "lead_time_weeks": lead_time,
-        "availability": availability,
-        "overall_risk": risk,
-        "best_alternative": component["alternative"],
-        "alternative_type": component["alt_type"]
+
+        "part_number":
+            component["part_number"],
+
+        "category":
+            component["category"],
+
+        "package":
+            component["package"],
+
+        "voltage":
+            component["voltage"],
+
+        "current":
+            component["current"],
+
+        "tolerance":
+            component["tolerance"],
+
+        "criticality":
+            criticality,
+
+        "second_source":
+            second_source,
+
+        "lifecycle":
+            lifecycle,
+
+        "lead_time_weeks":
+            lead_time,
+
+        "availability":
+            availability,
+
+        "overall_risk":
+            risk,
+
+        "best_alternative":
+            component["alternative"],
+
+        "alternative_type":
+            component["alt_type"]
     })
+
+
+# ============================================================
+# SAVE DATASET
+# ============================================================
+
 df = pd.DataFrame(rows)
 
-output_file = Path(__file__).parent / "component_dataset.csv"
+output_file = (
+    Path(__file__).parent
+    / "component_dataset.csv"
+)
 
-df.to_csv(output_file, index=False)
+df.to_csv(
+    output_file,
+    index=False
+)
 
-print("Dataset generated successfully!")
-print(df.head())
+
+print(
+    "Dataset generated successfully!"
+)
+
+print(
+    f"Rows generated: {len(df)}"
+)
+
+print(
+    f"Saved to: {output_file}"
+)
+
+print(
+    "\nSample:"
+)
+
+print(
+    df.head()
+)

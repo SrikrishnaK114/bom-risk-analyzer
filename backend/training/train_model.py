@@ -11,21 +11,44 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder
 
-# Locate the dataset
-base_dir = Path(__file__).parent
-dataset_path = base_dir / "component_dataset.csv"
 
-# Read dataset
-df = pd.read_csv(dataset_path)
+# ============================================================
+# PATHS
+# ============================================================
 
-print(df.head())
-print("\nDataset Shape:", df.shape)
+BASE_DIR = Path(__file__).resolve().parent
 
-# Target column
-target = "overall_risk"
+DATASET_PATH = (
+    BASE_DIR
+    / "component_dataset.csv"
+)
 
-# Features used for prediction
+MODEL_PATH = (
+    BASE_DIR
+    / "risk_model.pkl"
+)
+
+
+# ============================================================
+# LOAD DATASET
+# ============================================================
+
+df = pd.read_csv(
+    DATASET_PATH
+)
+
+print(
+    "Dataset shape:",
+    df.shape
+)
+
+
+# ============================================================
+# FEATURES
+# ============================================================
+
 feature_columns = [
+
     "category",
     "package",
     "voltage",
@@ -35,73 +58,211 @@ feature_columns = [
     "lifecycle",
     "lead_time_weeks",
     "availability"
+
 ]
 
-X = df[feature_columns]
-y = df[target]
+target = "overall_risk"
 
-print("\nFeatures:")
-print(X.head())
+
+X = df[
+    feature_columns
+]
+
+y = df[
+    target
+]
+
+
+# ============================================================
+# TRAIN / TEST SPLIT
+# ============================================================
 
 X_train, X_test, y_train, y_test = train_test_split(
+
     X,
     y,
+
     test_size=0.2,
+
     random_state=42
 )
 
-print(f"\nTraining samples: {len(X_train)}")
-print(f"Testing samples: {len(X_test)}")
+
+print(
+    f"Training samples: {len(X_train)}"
+)
+
+print(
+    f"Testing samples: {len(X_test)}"
+)
+
+
+# ============================================================
+# PREPROCESSING
+# ============================================================
 
 categorical_features = [
+
     "category",
     "package",
     "criticality",
     "second_source",
     "lifecycle"
+
 ]
 
+
 numeric_features = [
+
     "voltage",
     "current",
     "lead_time_weeks",
     "availability"
+
 ]
 
+
 preprocessor = ColumnTransformer(
+
     transformers=[
+
         (
-            "cat",
-            OneHotEncoder(handle_unknown="ignore"),
+            "categorical",
+
+            OneHotEncoder(
+                handle_unknown="ignore"
+            ),
+
             categorical_features
         )
+
     ],
+
     remainder="passthrough"
 )
 
+
+# ============================================================
+# MODEL
+# ============================================================
+
 model = Pipeline([
-    ("preprocessor", preprocessor),
-    ("regressor", RandomForestRegressor(
-        n_estimators=200,
-        random_state=42
-    ))
+
+    (
+        "preprocessor",
+        preprocessor
+    ),
+
+    (
+        "regressor",
+
+        RandomForestRegressor(
+
+            n_estimators=300,
+
+            random_state=42,
+
+            min_samples_leaf=2
+        )
+    )
+
 ])
 
-print("\nTraining model...")
 
-model.fit(X_train, y_train)
+# ============================================================
+# TRAIN
+# ============================================================
 
-print("Training complete!")
+print(
+    "\nTraining model..."
+)
 
-predictions = model.predict(X_test)
 
-mae = mean_absolute_error(y_test, predictions)
+model.fit(
+    X_train,
+    y_train
+)
 
-print(f"\nMean Absolute Error: {mae:.2f}")
 
-model_path = base_dir / "risk_model.pkl"
+print(
+    "Training complete!"
+)
 
-joblib.dump(model, model_path)
 
-print("\nModel saved successfully!")
-print(f"Location: {model_path}")
+# ============================================================
+# EVALUATION
+# ============================================================
+
+predictions = model.predict(
+    X_test
+)
+
+
+mae = mean_absolute_error(
+    y_test,
+    predictions
+)
+
+
+print(
+    f"\nMean Absolute Error: {mae:.2f}"
+)
+
+
+# ============================================================
+# RISK LEVEL
+# ============================================================
+
+def risk_level(score):
+
+    if score >= 70:
+        return "High"
+
+    elif score >= 40:
+        return "Medium"
+
+    return "Low"
+
+
+actual_levels = y_test.apply(
+    risk_level
+)
+
+
+predicted_levels = pd.Series(
+    predictions,
+    index=y_test.index
+).apply(
+    risk_level
+)
+
+
+accuracy = (
+    actual_levels
+    == predicted_levels
+).mean()
+
+
+print(
+    f"Risk Level Accuracy: "
+    f"{accuracy * 100:.2f}%"
+)
+
+
+# ============================================================
+# SAVE MODEL
+# ============================================================
+
+joblib.dump(
+    model,
+    MODEL_PATH
+)
+
+
+print(
+    "\nModel saved successfully!"
+)
+
+print(
+    f"Location: {MODEL_PATH}"
+)
