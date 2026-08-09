@@ -20,7 +20,7 @@ st.set_page_config(
 # CONFIGURATION
 # ============================================================
 
-API_URL = "http://localhost:8000"
+API_URL = "https://bom-risk-analyzer-api.onrender.com"
 
 
 # ============================================================
