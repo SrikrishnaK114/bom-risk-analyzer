@@ -2,11 +2,6 @@ import joblib
 import pandas as pd
 from pathlib import Path
 
-
-# ============================================================
-# LOAD TRAINED ML MODEL
-# ============================================================
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 MODEL_PATH = BASE_DIR / "training" / "risk_model.pkl"
 
@@ -17,10 +12,6 @@ if not MODEL_PATH.exists():
 
 model = joblib.load(MODEL_PATH)
 
-
-# ============================================================
-# PARSERS
-# ============================================================
 
 def parse_voltage(value):
     try:
@@ -53,10 +44,6 @@ def parse_current(value):
         return 0.0
 
 
-# ============================================================
-# RISK LEVEL
-# ============================================================
-
 def get_risk_level(score):
 
     if score >= 70:
@@ -66,11 +53,6 @@ def get_risk_level(score):
         return "Medium"
 
     return "Low"
-
-
-# ============================================================
-# COMPONENT RISK
-# ============================================================
 
 def calculate_component_risk(component):
 
@@ -86,10 +68,6 @@ def calculate_component_risk(component):
     current = parse_current(
         specs.get("current", "0mA")
     )
-
-    # --------------------------------------------------------
-    # FEATURES SENT TO ML MODEL
-    # --------------------------------------------------------
 
     features = pd.DataFrame([{
         "category": component.get(
@@ -125,11 +103,6 @@ def calculate_component_risk(component):
         )
     }])
 
-
-    # ========================================================
-    # ML PREDICTION
-    # ========================================================
-
     try:
 
         predicted_score = model.predict(
@@ -157,24 +130,9 @@ def calculate_component_risk(component):
         min(100, risk_score)
     )
 
-
-    # ========================================================
-    # RISK LEVEL
-    # ========================================================
-
     risk_level = get_risk_level(
         risk_score
     )
-
-
-    # ========================================================
-    # EXPLAINABLE RISK BREAKDOWN
-    #
-    # This is NOT replacing the ML model.
-    #
-    # It explains which factors contribute to the
-    # component's risk.
-    # ========================================================
 
     breakdown = {
         "obsolescence": 0,
@@ -182,11 +140,6 @@ def calculate_component_risk(component):
         "single_source": 0,
         "criticality": 0
     }
-
-
-    # --------------------------------------------------------
-    # Lifecycle
-    # --------------------------------------------------------
 
     lifecycle = str(
         component.get(
@@ -206,11 +159,6 @@ def calculate_component_risk(component):
     elif lifecycle == "ACTIVE":
 
         breakdown["obsolescence"] = 5
-
-
-    # --------------------------------------------------------
-    # Supply
-    # --------------------------------------------------------
 
     lead_time = float(
         component.get(
@@ -244,21 +192,11 @@ def calculate_component_risk(component):
 
         breakdown["supply"] += 10
 
-
-    # --------------------------------------------------------
-    # Single Source
-    # --------------------------------------------------------
-
     if component.get(
         "second_source"
     ) is False:
 
         breakdown["single_source"] = 10
-
-
-    # --------------------------------------------------------
-    # Criticality
-    # --------------------------------------------------------
 
     criticality = str(
         component.get(
@@ -276,11 +214,6 @@ def calculate_component_risk(component):
 
         breakdown["criticality"] = 8
 
-
-    # ========================================================
-    # DEBUG
-    # ========================================================
-
     print("\nDEBUG COMPONENT:")
     print(component)
 
@@ -292,11 +225,6 @@ def calculate_component_risk(component):
 
     print("\nDEBUG BREAKDOWN:")
     print(breakdown)
-
-
-    # ========================================================
-    # RESULT
-    # ========================================================
 
     return {
         "part_number": component.get(

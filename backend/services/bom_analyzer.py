@@ -4,20 +4,7 @@ from services.analyzer import analyze_component
 
 
 def analyze_bom(bom_file):
-    """
-    Complete BOM analysis pipeline.
-
-    Flow:
-        BOM CSV
-            ↓
-        Parse
-            ↓
-        Enrich using component master
-            ↓
-        Risk + substitute + AI analysis
-            ↓
-        Sort by risk
-    """
+   
 
     # 1. Parse user's BOM
     parsed_bom = parse_bom(bom_file)

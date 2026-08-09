@@ -5,20 +5,7 @@ from services.llm_service import generate_component_explanation
 
 
 def analyze_component(component):
-    """
-    Complete BOM component analysis pipeline.
-
-    Flow:
-    Component
-        ↓
-    Risk prediction
-        ↓
-    Substitute recommendation
-        ↓
-    AI explanation
-    """
-
-
+    
     # 1. Predict risk using ML model
     risk_result = calculate_component_risk(component)
 

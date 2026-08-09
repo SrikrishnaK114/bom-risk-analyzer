@@ -1,19 +1,9 @@
 import pandas as pd
 from pathlib import Path
 
-
-# ============================================================
-# PATHS
-# ============================================================
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 DATASET_PATH = BASE_DIR / "data" / "component_master.csv"
-
-
-# ============================================================
-# LOAD COMPONENT MASTER
-# ============================================================
 
 if not DATASET_PATH.exists():
     raise FileNotFoundError(
@@ -34,28 +24,9 @@ component_db["part_number"] = (
     .str.strip()
 )
 
-
-# ============================================================
-# FIND BEST SUBSTITUTE
-# ============================================================
-
 def find_best_substitute(component):
-    """
-    Find the most compatible substitute for a component.
-
-    Compatibility is based on:
-    - Category
-    - Package
-    - Voltage
-    - Current
-    - Tolerance
-    """
-
+    
     specs = component.get("electrical_specs", {})
-
-    # --------------------------------------------------------
-    # Target specifications
-    # --------------------------------------------------------
 
     try:
         target_voltage = float(
@@ -104,10 +75,6 @@ def find_best_substitute(component):
         specs.get("tolerance", "")
     ).strip()
 
-    # --------------------------------------------------------
-    # Candidate components
-    # --------------------------------------------------------
-
     candidates = component_db.copy()
 
     # Never recommend the component itself
@@ -128,10 +95,6 @@ def find_best_substitute(component):
     if not same_category.empty:
         candidates = same_category
 
-    # --------------------------------------------------------
-    # Find best candidate
-    # --------------------------------------------------------
-
     best_component = None
     best_score = -1
 
@@ -148,10 +111,6 @@ def find_best_substitute(component):
             candidate["package"]
         ).strip()
 
-        # --------------------------------------------
-        # Category — 25 points
-        # --------------------------------------------
-
         if (
             candidate_category.lower()
             == target_category.lower()
@@ -159,20 +118,13 @@ def find_best_substitute(component):
             score += 25
             reasons.append("Same category")
 
-        # --------------------------------------------
-        # Package — 25 points
-        # --------------------------------------------
-
+        
         if (
             candidate_package.lower()
             == target_package.lower()
         ):
             score += 25
             reasons.append("Same package")
-
-        # --------------------------------------------
-        # Voltage — 20 points
-        # --------------------------------------------
 
         try:
             candidate_voltage = float(
@@ -188,11 +140,6 @@ def find_best_substitute(component):
 
         except (ValueError, TypeError):
             pass
-
-        # --------------------------------------------
-        # Current — 20 points
-        # Relative tolerance: 10%
-        # --------------------------------------------
 
         try:
             candidate_current = float(
@@ -218,10 +165,6 @@ def find_best_substitute(component):
         except (ValueError, TypeError):
             pass
 
-        # --------------------------------------------
-        # Tolerance — 10 points
-        # --------------------------------------------
-
         candidate_tolerance = str(
             candidate["tolerance"]
         ).strip()
@@ -235,10 +178,6 @@ def find_best_substitute(component):
                 "Tolerance compatible"
             )
 
-        # --------------------------------------------
-        # Keep highest score
-        # --------------------------------------------
-
         if score > best_score:
 
             best_score = score
@@ -251,10 +190,6 @@ def find_best_substitute(component):
                 "reason": ", ".join(reasons)
             }
 
-    # --------------------------------------------------------
-    # No substitute
-    # --------------------------------------------------------
-
     if best_component is None:
 
         return {
@@ -265,10 +200,6 @@ def find_best_substitute(component):
             "reason":
                 "No compatible substitute found."
         }
-
-    # --------------------------------------------------------
-    # Classify alternative
-    # --------------------------------------------------------
 
     if best_score == 100:
 
@@ -281,10 +212,6 @@ def find_best_substitute(component):
     else:
 
         recommendation_type = "Requires Redesign"
-
-    # --------------------------------------------------------
-    # Return recommendation
-    # --------------------------------------------------------
 
     return {
         "best_alternative":
