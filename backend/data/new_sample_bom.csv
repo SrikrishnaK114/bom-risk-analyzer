@@ -1,0 +1,8 @@
+part_number,manufacturer,category,package,quantity,criticality,second_source
+STM32F103C8,STMicroelectronics,MCU,LQFP48,2,High,No
+MPU6050,TDK InvenSense,Sensor,QFN24,1,High,No
+ATmega328P,Microchip,MCU,TQFP32,3,Medium,Yes
+LM7805,Texas Instruments,Voltage Regulator,TO220,2,Medium,Yes
+LM358,Texas Instruments,Op Amp,SOIC8,5,Low,Yes
+AO3400,AOS,MOSFET,SOT23,4,Low,Yes
+2N7000,onsemi,MOSFET,TO92,3,Low,Yes

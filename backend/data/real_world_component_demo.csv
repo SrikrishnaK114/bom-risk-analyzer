@@ -1,0 +1,16 @@
+device_or_reference,part_number,manufacturer,category,package,quantity,criticality,second_source
+Arduino UNO R3,ATmega328P,Microchip,MCU,TQFP32,1,Medium,Yes
+ESP32-WROOM-32 IoT module,ESP32-WROOM,Espressif,WiFi MCU,Module,1,High,No
+ESP32-WROOM-32 IoT module,AMS1117-3.3,Advanced Monolithic Systems,Voltage Regulator,SOT223,1,Medium,Yes
+Environmental sensing node,BME280,Bosch,Sensor,LGA8,1,Medium,Yes
+Environmental sensing node,BMP280,Bosch,Sensor,LGA8,1,Low,Yes
+Motion sensing node,MPU6050,TDK InvenSense,Sensor,QFN24,1,High,No
+Motion sensing node,ICM42688,TDK InvenSense,Sensor,QFN24,1,High,Yes
+STM32F103 development board,STM32F103C8,STMicroelectronics,MCU,LQFP48,1,High,No
+STM32F103 development board,LM1117-3.3,Texas Instruments,Voltage Regulator,SOT223,1,Medium,Yes
+STM32F103 development board,LM358,Texas Instruments,Op Amp,SOIC8,1,Low,Yes
+5V power supply stage,LM7805,Texas Instruments,Voltage Regulator,TO220,1,Medium,Yes
+5V power supply stage,LM1117-5.0,Texas Instruments,Voltage Regulator,SOT223,1,Medium,Yes
+3.3V power supply stage,AMS1117-3.3,Advanced Monolithic Systems,Voltage Regulator,SOT223,1,Medium,Yes
+Power switching stage,IRLZ44N,Infineon,MOSFET,TO220,2,Medium,Yes
+Low-side switching stage,2N7000,onsemi,MOSFET,TO92,4,Low,Yes
